@@ -1,7 +1,7 @@
 class profile extends HTMLElement {
 
     static get observedAttributes() {
-        return ["name", "id", "city"]
+        return ["name", "uid", "city"]
     }
 
     constructor(){
@@ -25,7 +25,7 @@ class profile extends HTMLElement {
         <link rel="stylesheet" href="./src/components/profile/profile.css">
         <section>
         <h1>${this.name}</h1>
-        <p>ID: ${this.id}</p>
+        <p>ID: ${this.uid}</p>
         <p><strong>From:${this.city}</strong></p>
         </section>
         `

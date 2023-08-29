@@ -15,7 +15,8 @@ class AppContainer extends HTMLElement {
     render(){
         data.forEach((user)=>{
             this.shadowRoot.innerHTML += `
-                <my-profile name="${user.name}" id="${user.id}" city="${user.address.city}"></my-profile>
+                <my-profile name="${user.name}" uid="${user.id}" city="${user.address.city}"></my-profile>
+                <my-button message="Registra tu like"></my-button>
             `
         })
     }
